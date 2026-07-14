@@ -7,4 +7,5 @@ urlpatterns = [
     path("show/<int:pk>", views.get_visit),
     path("update/<int:pk>", views.update_visit),
     path("delete/<int:pk>", views.delete_visit),
+    
 ]
