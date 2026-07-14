@@ -11,9 +11,21 @@ class Visit(models.Model):
 
     visit_date = models.DateField()
 
-    diagnosis = models.TextField()
+    general_health = models.CharField(max_length=20)
 
-    treatment = models.TextField()
+    on_diet = models.CharField(
+        max_length=3,
+        blank=True,
+        null=True
+    )
+
+    on_drugs = models.CharField(
+        max_length=3,
+        blank=True,
+        null=True
+    )
+
+    comments = models.TextField()
 
     created_at = models.DateTimeField(auto_now_add=True)
 
